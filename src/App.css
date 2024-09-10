@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+/* For Naviation Bar */
+.navbar {
+  background: #121212;
+  /* Dark background color */
+  box-shadow: 1px -1px 19px 3px rgba(0, 0, 0, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+
+/* For Home */
+
+.hero-slider {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("./src/Images/Learn Coding Now No Regrets.png"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-image: linear-gradient(to left, #919191 0%, #383b3b 100%); */
+  background-image: linear-gradient(to right,
+      rgba(30, 30, 30, 1) 0%,
+      rgba(45, 45, 45, 1) 60%,
+      rgba(60, 60, 60, 1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#hero-heading {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#hero-left {
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home-subheading {
+  margin-right: 72%;
+}
+
+#hero-img {
+  width: 75%;
+  height: auto;
+  filter: drop-shadow(0 25px 8px rgba(0, 0, 0, 0.6));
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.4),
+    /* Main shadow */
+    0 15px 30px rgba(0, 0, 0, 0.3),
+    /* Slightly larger shadow for depth */
+    0 30px 60px rgba(0, 0, 0, 0.2);
+  /* Even larger shadow for more depth */
+  border-radius: 3vw;
+  background-image: linear-gradient(to bottom,
+      #1e3a8a 0%,
+      /* Deep Blue */
+      #5c2e91 33%,
+      /* Purple */
+      #d83a7e 66%,
+      /* Vibrant Pink */
+      #c81d6d 100%
+      /* Dark Pink */
+    );
+}
+
+.custom-btn {
+  background: linear-gradient(to bottom,
+      #1e3a8a 0%,
+      /* Deep Blue */
+      #5c2e91 33%,
+      /* Purple */
+      #d83a7e 66%,
+      /* Vibrant Pink */
+      #c81d6d 100%
+      /* Dark Pink */
+    );
+  border: none;
+  /* Remove default border */
+  padding: 10px 20px;
+  /* Padding inside the button */
+  color: #fff;
+  /* Text color */
+  font-size: 16px;
+  /* Font size */
+  font-weight: bold;
+  /* Font weight */
+  border-radius: 3vw;
+  /* Rounded corners */
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.4),
+    /* Main shadow */
+    0 15px 30px rgba(0, 0, 0, 0.3),
+    /* Slightly larger shadow for depth */
+    0 30px 60px rgba(0, 0, 0, 0.2);
+  /* Even larger shadow for more depth */
+}
+
+.custom-btn:hover {
+  background: linear-gradient(to bottom,
+      #1e3a8a 0%,
+      #5c2e91 33%,
+      #d83a7e 66%,
+      #c81d6d 100%);
+  /* Retain original gradient */
+  box-shadow:
+    0 12px 20px rgba(0, 0, 0, 0.5),
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 40px 80px rgba(0, 0, 0, 0.3);
+  /* Enhance shadow */
+}
+
+.custom-btn:focus {
+  outline: none;
+  /* Remove default focus outline */
+  box-shadow:
+    0 0 0 3px rgba(0, 0, 0, 0.2);
+  /* Custom focus ring */
+}
+
+#hero-right {
+  justify-content: center;
+  align-items: center;
 }
