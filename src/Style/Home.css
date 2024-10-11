@@ -1,3 +1,4 @@
+
 /* For Naviation Bar */
 .navbar {
     background: #121212;
@@ -75,6 +76,14 @@
     align-items: center;
 }
 
+/* Blog Section */
+
+.blog-section {
+    background-image: linear-gradient(to top, rgb(180, 180, 180) 0%, #1e3b8a4f 50%, rgb(180, 180, 180) 100%);
+    transition: background-color 0.5s ease;
+    padding: 50px 0;
+}
+
 /* Card Button */
 .card-btn {
     background: #333;
@@ -104,3 +113,28 @@
     box-shadow:
         0 0 0 3px rgba(0, 0, 0, 0.2);
 }
+
+/* Services Section */
+#services-section {
+    background-image: linear-gradient(to top, rgb(180, 180, 180) 100%, #1e3b8a4f 50%, rgb(180, 180, 180) 0%);
+    transition: background-color 0.5s ease;
+    padding: 50px 0;
+    border-top: .3vw solid #121212;
+}
+
+
+
+/* Responsiveness */
+
+/* @media (max-width: 1024px) {
+    .row > div {
+        flex: 1 1 50%; 
+    }
+} */
+
+/* @media (max-width: 768px) {
+    .row > div {
+        flex: 1 1 100%; 
+        margin: 10px;  
+    }
+} */
